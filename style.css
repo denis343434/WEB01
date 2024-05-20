@@ -416,13 +416,15 @@ input {outline:none;}
 	display: grid;
 	grid-gap: 20px;
 	background-color: #fff;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	padding: 30px;
 	padding-left: 45px;
 	padding-top: 45px;
-	border-bottom-right-radius: 40px;
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
 }
 .d-n{
 	display: none;
@@ -432,11 +434,16 @@ input {outline:none;}
 	height: 40px;
 	position: absolute;
 	top: 20px;
-	right: 20px;
+	right: 90px;
+}
+.menu-text{
+	grid-gap: 0px;
+	display: grid;
+	height: 400px;
 }
 .menu li{
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 48px;
 }
 footer{
 	background-color:rgb(51, 51, 51);
@@ -707,5 +714,8 @@ footer{
 	.fon{
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	.menu{
+		padding-left: 20px;
 	}
 }
